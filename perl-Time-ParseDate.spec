@@ -4,7 +4,7 @@
 #
 Name     : perl-Time-ParseDate
 Version  : 2015.103
-Release  : 1
+Release  : 2
 URL      : https://cpan.metacpan.org/authors/id/M/MU/MUIR/modules/Time-ParseDate-2015.103.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/M/MU/MUIR/modules/Time-ParseDate-2015.103.tar.gz
 Summary  : 'Parse and format time values'
@@ -26,7 +26,7 @@ Time::DaysInMonth.pm
 %package dev
 Summary: dev components for the perl-Time-ParseDate package.
 Group: Development
-Provides: perl-Time-ParseDate-devel
+Provides: perl-Time-ParseDate-devel = %{version}-%{release}
 
 %description dev
 dev components for the perl-Time-ParseDate package.
@@ -51,9 +51,9 @@ fi
 %install
 rm -rf %{buildroot}
 if test -f Makefile.PL; then
-make pure_install PERL_INSTALL_ROOT=%{buildroot}
+make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
-./Build install --installdirs=site --destdir=%{buildroot}
+./Build install --installdirs=vendor --destdir=%{buildroot}
 fi
 find %{buildroot} -type f -name .packlist -exec rm -f {} ';'
 find %{buildroot} -depth -type d -exec rmdir {} 2>/dev/null ';'
@@ -62,11 +62,11 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.26.1/Time/CTime.pm
-/usr/lib/perl5/site_perl/5.26.1/Time/DaysInMonth.pm
-/usr/lib/perl5/site_perl/5.26.1/Time/JulianDay.pm
-/usr/lib/perl5/site_perl/5.26.1/Time/ParseDate.pm
-/usr/lib/perl5/site_perl/5.26.1/Time/Timezone.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Time/CTime.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Time/DaysInMonth.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Time/JulianDay.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Time/ParseDate.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Time/Timezone.pm
 
 %files dev
 %defattr(-,root,root,-)
