@@ -62,11 +62,11 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.1Time/CTime.pm
-/usr/lib/perl5/vendor_perl/5.28.1Time/DaysInMonth.pm
-/usr/lib/perl5/vendor_perl/5.28.1Time/JulianDay.pm
-/usr/lib/perl5/vendor_perl/5.28.1Time/ParseDate.pm
-/usr/lib/perl5/vendor_perl/5.28.1Time/Timezone.pm
+/usr/lib/perl5/vendor_perl/5.28.1/Time/CTime.pm
+/usr/lib/perl5/vendor_perl/5.28.1/Time/DaysInMonth.pm
+/usr/lib/perl5/vendor_perl/5.28.1/Time/JulianDay.pm
+/usr/lib/perl5/vendor_perl/5.28.1/Time/ParseDate.pm
+/usr/lib/perl5/vendor_perl/5.28.1/Time/Timezone.pm
 
 %files dev
 %defattr(-,root,root,-)
