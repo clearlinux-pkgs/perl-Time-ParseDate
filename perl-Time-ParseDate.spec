@@ -4,10 +4,10 @@
 #
 Name     : perl-Time-ParseDate
 Version  : 2015.103
-Release  : 7
+Release  : 8
 URL      : https://cpan.metacpan.org/authors/id/M/MU/MUIR/modules/Time-ParseDate-2015.103.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/M/MU/MUIR/modules/Time-ParseDate-2015.103.tar.gz
-Summary  : 'Parse and format time values'
+Summary  : date parsing both relative and absolute
 Group    : Development/Tools
 License  : GPL-2.0
 BuildRequires : buildreq-cpan
@@ -27,6 +27,7 @@ Time::DaysInMonth.pm
 Summary: dev components for the perl-Time-ParseDate package.
 Group: Development
 Provides: perl-Time-ParseDate-devel = %{version}-%{release}
+Requires: perl-Time-ParseDate = %{version}-%{release}
 
 %description dev
 dev components for the perl-Time-ParseDate package.
