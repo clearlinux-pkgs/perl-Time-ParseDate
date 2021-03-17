@@ -4,7 +4,7 @@
 #
 Name     : perl-Time-ParseDate
 Version  : 2015.103
-Release  : 11
+Release  : 12
 URL      : https://cpan.metacpan.org/authors/id/M/MU/MUIR/modules/Time-ParseDate-2015.103.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/M/MU/MUIR/modules/Time-ParseDate-2015.103.tar.gz
 Summary  : 'Parse and format time values'
@@ -85,8 +85,8 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.3/Time/CTime.pm
-/usr/lib/perl5/vendor_perl/5.30.3/Time/DaysInMonth.pm
-/usr/lib/perl5/vendor_perl/5.30.3/Time/JulianDay.pm
-/usr/lib/perl5/vendor_perl/5.30.3/Time/ParseDate.pm
-/usr/lib/perl5/vendor_perl/5.30.3/Time/Timezone.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Time/CTime.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Time/DaysInMonth.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Time/JulianDay.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Time/ParseDate.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Time/Timezone.pm
