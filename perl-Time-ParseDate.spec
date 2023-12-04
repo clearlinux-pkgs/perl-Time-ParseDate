@@ -4,7 +4,7 @@
 #
 Name     : perl-Time-ParseDate
 Version  : 2015.103
-Release  : 21
+Release  : 22
 URL      : https://cpan.metacpan.org/authors/id/M/MU/MUIR/modules/Time-ParseDate-2015.103.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/M/MU/MUIR/modules/Time-ParseDate-2015.103.tar.gz
 Summary  : 'Parse and format time values'
